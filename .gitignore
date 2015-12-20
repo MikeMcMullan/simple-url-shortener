@@ -1,3 +1,4 @@
 /vendor
 .env
 .idea
+envoy.config.php
