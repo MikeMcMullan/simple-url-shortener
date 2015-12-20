@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+body.loading .container {
+    visibility: hidden;
+}
+
+body {
+    background: white url(/assets/img/tiny_grid/tiny_grid.png) repeat;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #585858;
+}
+
+h1, h2 {
+    font-weight: 200;
+    font-family: 'Rancho', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+input {
+    font-size: 14px;
+    color: #585858;
+}
+
+.container {
+    background: #fff;
+    width: 90%;
+    margin: 25px auto 0;
+    padding: 0;
+    border: 1px #dadada solid;
+    box-shadow: 0px 0px 3px #dadada;
+}
+.container header {
+    text-align: center;
+}
+
+/*********************
+ * Url Shortener Form
+*********************/
+#url-shortener input[type=text],
+#url-shortener input[type=password] {
+    padding: 15px 0;
+    text-indent: 10px;
+    width: 100%;
+    border: 0;
+    border-top: 1px #dadada solid;
+    margin: 0;
+    outline: none;
+}
+#url-shortener input[type=submit] {
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    margin: 0;
+    outline: none;
+    cursor: pointer;
+    transition: background .2s;
+}
+#url-shortener input[type=submit].not-valid {
+    background: #ff4136;
+}
+#url-shortener input[type=submit].not-valid:hover, #url-shortener input[type=submit].not-valid:focus {
+    background: #aa261f;
+}
+#url-shortener input[type=submit].valid {
+    background: #2ECC40;
+}
+#url-shortener input[type=submit].valid:hover, #url-shortener input[type=submit].valid:focus {
+    background: #11661a;
+}
+#url-shortener label.error {
+    display: block;
+    padding: 15px 0;
+    text-indent: 25px;
+    border-top: 1px #dadada solid;
+    position: relative;
+}
+#url-shortener label.error:before {
+    content: '▲';
+    position: absolute;
+    top: 15px;
+    left: -17px;
+    width: 15px;
+    height: 15px;
+}
+
+#result {
+ 
+}
+#result h2 {
+    text-align: center;
+}
+#result input[type=text] {
+    padding: 15px 0;
+    text-indent: 10px;
+    width: 100%;
+    border: 0;
+    border-top: 1px #dadada solid;
+    margin: 0;
+    outline: none;
+}
+
+#loading-url {
+    background: white url(/assets/img/ajax-loader.gif) center center no-repeat;
+    height: 110px;
+}
