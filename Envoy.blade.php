@@ -60,7 +60,7 @@ echo "Storage directory set up";
 ln -s {{ $path }}/.env {{ $release }}/.env;
 echo "Environment file set up";
 cd {{ $release }};
-composer install --no-interaction;
+composer install --no-dev --no-interaction;
 php artisan migrate --env={{ $env }} --force --no-interaction;
 rm {{ $path }}/current;
 ln -s {{ $release }} {{ $path }}/current;
