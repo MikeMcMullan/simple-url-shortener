@@ -61,6 +61,6 @@ class HomeController extends Controller
      */
     public function resolve($token, Resolver $resolver)
     {
-        return redirect($resolver->make($token));
+        return redirect($resolver->make($token), 301);
     }
 }
