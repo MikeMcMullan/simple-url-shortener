@@ -2,3 +2,4 @@
 .env
 .idea
 envoy.config.php
+composer.lock
