@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Url Shortener</title>
 
     <link href="//fonts.googleapis.com/css?family=Rancho" rel="stylesheet" type="text/css">
