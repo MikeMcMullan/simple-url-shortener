@@ -28,7 +28,7 @@
 
         <section id="result"  v-if="displayingResults">
             <h2>Shortened Url</h2>
-            <input type="text" v-model="shortenedUrl" disabled>
+            <input type="text" v-model="shortenedUrl" readonly="readonly">
         </section>
     </div>
 
